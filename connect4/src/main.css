@@ -1,0 +1,125 @@
+div {
+  position: relative;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  height: 100%;
+  padding: 5px;
+  display: 'flex';
+  justify-content: 'center';
+  align-items: center;
+}
+
+.reset-button {
+  height: 35px;
+  width: 90px;
+  font-weight: 200;
+}
+
+.reset-button {
+  background: #0000BC;
+  ;
+  border-bottom: 6px inset rgba(0, 0, 0, .5);
+  border-left: 6px inset rgba(0, 0, 0, .5);
+  border-right: 6px inset rgba(255, 255, 255, .5);
+  border-top: 6px inset rgba(255, 255, 255, .5);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  min-width: 100px;
+  padding: .5rem;
+  text-transform: uppercase;
+  width: auto;
+}
+
+.reset-button:active {
+  opacity: .5;
+  background: #0000FC;
+}
+
+.main-board {
+  width: 4vw;
+  height: 4vw;
+  background-color: #00a8ff;
+  display: flex;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.board {
+  border-radius: 50%;
+  background-color: white;
+  flex: 1;
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.piece {
+  flex: 1;
+  border-radius: 50%;
+  border: 1px solid #333;
+}
+
+.winner-message-primary {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lucida Console";
+}
+
+.winner-message-secondary {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 3;
+  background-color: rgb(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 200;
+  font-size: 8vw;
+  font-family: "Lucida Console";
+}
+
+.winner-message-tertiary {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lucida Console";
+}
+
+.current-player {
+  font-weight: 500px;
+  font-size: 33px;
+  font-family: "Lucida Console";
+}
+
+.dot {
+  margin-bottom: -7px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.header {
+  font-weight: 500px;
+  font-size: 65px;
+  font-family: "Lucida Console";
+  margin-bottom: 7px;
+}
